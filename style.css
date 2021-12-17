@@ -1,0 +1,191 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body,html{
+  position:relative;
+  overflow-x: hidden;
+}
+.container{
+  
+  display:grid;
+  width: 100vw;
+  min-height:100vh;
+  grid-template-areas: 'h' 'a';
+}
+
+header{
+  height:20vh;
+  background:#7818B8 ;
+  grid-area: h;
+  display: grid;
+  grid-template-areas: 'div01 div02'
+ 'div03 div03';
+ padding: 12px;
+ 
+}
+header ul{
+  
+  grid-area: div02;
+  width: 50vw;
+  height:7vh;
+  list-style: none;
+  color:#F0F0F0;
+  display:flex;
+  align-items: center;
+  margin-left: 150px;
+  
+  
+}
+header ul li{
+  margin:0 15px;
+  
+}
+#profile{
+  display:flex;
+  color:#F0F0F0;
+  align-items: center;
+  padding-left: 12px;
+  grid-area: div01;
+  width: 10vw;
+  height:7vh;
+  
+}
+
+#helloUser{
+  grid-area: div03;
+  width: 100vw;
+  height: 8vh;
+  line-height: 8vh;
+  color:#F0F0F0;
+  font-size: 10pt;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.corpoApp{
+  min-height: 90vh;
+  width: 100vw;
+  background: #F0F0F0;
+  grid-area: a;
+  
+}
+#radiusUser{
+  background:#A058D0;
+  border-radius: 50%;
+  padding:10px;
+}
+a{
+  color:#000;
+  text-decoration: none;
+}
+.menu{
+  display:flex;
+  flex-direction: column;
+  overflow:auto;
+ 
+}
+.menu ul#button{
+  display:flex;
+  list-style: none;
+  width: 100vw;
+  min-height: 80px;
+  
+ 
+  
+}
+.menu ul#label{
+  display:flex;
+  list-style: none;
+  width: 100vw;
+  min-height: 80px;
+  text-align: justify;
+  
+}
+.menu ul#button li{
+  min-width: 75px;
+  height:75px;
+  background: #E0E0E8;
+  border-radius: 50%;
+  margin:15px 8px;
+  text-align: center;
+  line-height: 80px;
+  
+}
+.menu ul#label li{
+  min-width: 75px;
+  height:75px;
+ 
+  margin:5px 8px 30px 8px;
+  text-align: center;
+  text-justify: inter-word;
+  line-height: 20px;
+ 
+  
+}
+
+#saldo{
+  font-size: 18pt;
+  font-weight: bold;
+  margin-left: 15px;
+  margin:5px 15px;
+ 
+}
+#acessConta{
+  display:flex;
+  justify-content: space-between;
+ 
+  margin:15px;
+}
+#acessConta span{
+  font-size: 15pt;
+  font-weight:bolder;
+  color:#585860;
+  margin-right: 15px;
+}
+.divConta{
+ 
+  border-bottom: 1px solid #E0E0E8;
+}
+
+.myCards{
+  width: 90vw;
+  height:8vh;
+  background:#E0E0E8;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 8vh;
+  margin:-20px 15px 35px 15px;
+}
+.myCards span{
+  float:left;
+  clear:both;
+  margin-left: 10px;
+}
+.lastDivConta{
+  display:flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+  
+}
+.card{
+  position: relative;
+  min-width:80vw;
+  min-height:12vh;
+  background:#E0E0E8;
+  border-radius: 12px;
+  text-align:center;
+  line-height: 4vh;
+  padding:10px 8px;
+  margin:10px 10px 30px 15px;
+  
+}
+
+.textPurple{
+  color:#9838D8;
+}
